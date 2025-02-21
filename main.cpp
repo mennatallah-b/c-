@@ -147,13 +147,14 @@ using namespace std;
                 cout << "(2) Deposit Money\n";
                 cout << "(3) Withdraw Money\n";
                 cout << "(4) Delete Account\n";
+                cout << "(5) EXIT ";
                 cout << "Enter your choice: ";
                 cin >> choice2;
 
-         if (choice2 < 1 || choice2 > 4) {
+         if (choice2 < 1 || choice2 > 5) {
                 cout << "Invalid choice " << choice2 << ". Please choose a number (1-5): ";
                 }
-            } while (choice2 < 1 || choice2 > 4);
+            } while (choice2 < 1 || choice2 > 5);
 
         switch (choice2) {
             case 1: //عرض المبلغ المتاح في الحساب
@@ -201,6 +202,11 @@ using namespace std;
             case 4: //حذف الحساب
                     deleteAccount();
             break;
+              case 5: //خروج من البرنامج
+                    cout << "Exiting. Thanks for using our banking service!\n";
+            break;
+            }
+
         } else {
             cout << "Invalid choice. Please try again.\n";
         }
