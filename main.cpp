@@ -202,11 +202,6 @@ using namespace std;
             case 4: //حذف الحساب
                     deleteAccount();
             break;
-
-            case 5: //خروج من البرنامج
-                    cout << "Exiting. Thanks for using our banking service!\n";
-            break;
-            }
         } else {
             cout << "Invalid choice. Please try again.\n";
         }
