@@ -147,7 +147,7 @@ using namespace std;
                 cout << "(2) Deposit Money\n";
                 cout << "(3) Withdraw Money\n";
                 cout << "(4) Delete Account\n";
-                cout << "(5) EXIT ";
+                cout << "(5) EXIT\n ";
                 cout << "Enter your choice: ";
                 cin >> choice2;
 
