@@ -4,7 +4,7 @@
 using namespace std;
 
      string name = "";
-     int number = 0;
+     int number = 0,z,y;
      double balance = 0;
      int accNum = 0;
      string password = "";
@@ -173,8 +173,8 @@ using namespace std;
                   cin >> deposit;
                 }
 
-                    balance += deposit;
-                    cout << deposit << "$" << "deposited successfully.\n";
+                   y= balance += deposit;
+                    cout << deposit << "$" << "deposited successfully. "<< "Now your balance is : " << y << " $ ";;
             break;
                 }
 
@@ -191,8 +191,8 @@ using namespace std;
                     }
 
                 if (balance >= withdrawal) {
-                     balance -= withdrawal;
-                    cout << withdrawal << "$" << "withdrawn successfully.\n";
+                    z= balance -= withdrawal;
+                    cout << withdrawal << "$" << "withdrawn successfully. " << "Now your balance is : " << z << " $ ";;
                     } else {
                     cout << "Insufficient funds. Withdrawal denied.\n";
                     }
